@@ -12,6 +12,7 @@
   "author": "aaa/ccm",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "helmet": "^1.1.0"
   }
 }
