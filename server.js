@@ -16,8 +16,18 @@ app.use(function (req, res, next) {
 
 //main API endpoint
 app.use('/api/:version', function (req, res, next) {
-    if (isNaN(parseInt(req.params.version)) || req.params.version > maxSupportedAPIVersion ){
-        console.log("ERROR: API version " + req.params.version + " not supported");
+    var versionNumber;
+    if (req.params.version != undefined && req.params.version.length >1){
+        
+        versionNumber = req.params.version.substring(1);
+    } else {
+        console.log('Error: Invalid API string');
+        res.status(400).json({error:'API version must be in form of "v#"'});
+        return;
+    }
+    
+    if (isNaN(parseInt(versionNumber)) || versionNumber > maxSupportedAPIVersion ){
+        console.log("ERROR: API version " + versionNumber + " not supported");
         res.status(400).json({error:"API version not supported"});
     }    
     //API routes

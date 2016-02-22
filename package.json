@@ -13,6 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
-    "helmet": "^1.1.0"
+    "helmet": "^1.1.0",
+    "lorem-ipsum": "^1.0.3",
+    "moment": "^2.11.2"
   }
 }
