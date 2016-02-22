@@ -2,7 +2,7 @@
   "name": "mockmessaging",
   "version": "0.0.1",
   "description": "Mock the messages api from for the future app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,5 +10,8 @@
     "aaa"
   ],
   "author": "aaa/ccm",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
