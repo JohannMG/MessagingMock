@@ -1,8 +1,11 @@
 var helmet = require('helmet');
 var express = require('express');
+var bodyParser = require('body-parser');
 var app = express();
 app.set('port', process.env.PORT || 3000); //port must be 80 (or 443 for SSL) when deployed to amazon
-app.use(helmet())
+app.use(helmet());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
  
 var maxSupportedAPIVersion = 1 ;
 var messageRoutes = require('./routes/MessageRoutes');
@@ -12,12 +15,12 @@ var messageRoutes = require('./routes/MessageRoutes');
 app.use(function (req, res, next) {
     console.log( req.method + " " + req.url);
     next();
-})
+});
 
 //main API endpoint
 app.use('/api/:version', function (req, res, next) {
     var versionNumber;
-    if (req.params.version != undefined && req.params.version.length >1){
+    if (req.params.version !== undefined && req.params.version.length >1){
         
         versionNumber = req.params.version.substring(1);
     } else {

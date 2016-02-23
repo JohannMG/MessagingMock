@@ -2,14 +2,14 @@ module.exports = function authcheck (req, res, next){
     var reqAuth = req.headers.authorization;
     
     if ( reqAuth == undefined || reqAuth == ""){
-        res.json({error:"Missing Auth Header"});
+        res.status(401).json({error:"Missing Auth Header"});
         return
     }
     
     //Split between space for mode and user+pass
     var authorizationParts = reqAuth.split(' '); // ["Basic", "BASE64-3489yt2hiu"]
     if (authorizationParts[0].toUpperCase() != 'BASIC'  || authorizationParts[1].length <2){
-        res.json({error: "Must use Basic Auth"});
+        res.status(401).json({error: "Must use Basic Auth"});
         return;
     }
     
@@ -21,7 +21,7 @@ module.exports = function authcheck (req, res, next){
     
     //if empty, return as invalid request
     if (!(apikey) || !(customerToken)){
-        res.json({error:'Missing API Key or Customer Token'});
+        res.status(401).json({error:'Missing API Key or Customer Token'});
         return
     }
     
@@ -31,7 +31,7 @@ module.exports = function authcheck (req, res, next){
     }
     
     //puts customer token into request object
-    res.customerToken = customerToken;
+    req.customerToken = customerToken;
     //continues
     next();
 };

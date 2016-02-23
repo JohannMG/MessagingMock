@@ -12,7 +12,9 @@
   "author": "aaa/ccm",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4",
+    "handlebars": "^4.0.5",
     "helmet": "^1.1.0",
     "lorem-ipsum": "^1.0.3",
     "moment": "^2.11.2"
