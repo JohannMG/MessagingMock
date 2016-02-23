@@ -88,7 +88,7 @@ Inbox.prototype.getMessageById = function getMessageById(id) {
  *      success is true is message to delete was found 
  */
 Inbox.prototype.deleteMessageById = function deleteMessageById( deletionTargetId, callback ){
-    console.log(deletionTargetId);
+
     var found = this.messages.reduce(function (reduceVal, element, idx) {
         return ( reduceVal || (element.id == deletionTargetId) ) 
     },false);
@@ -98,7 +98,7 @@ Inbox.prototype.deleteMessageById = function deleteMessageById( deletionTargetId
     
     this.messages = this.messages.filter(function (element, index){
         return element.id != deletionTargetId;
-    });
+    }); 
     
 };
 

@@ -123,6 +123,7 @@ router.put('/:messageId', function(req, res, next){
     //Check that "read" was sent in body, and is a Bool
     if (req.body.read === undefined || typeof req.body.read != 'boolean' ){
         res.status(400).json({error: 'read parameter must be provided in body as boolean'});
+        return;
     }
    
    //Update and return 204 if operation was successful
