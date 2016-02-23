@@ -83,12 +83,23 @@ Inbox.prototype.getMessageById = function getMessageById(id) {
 //Find and delete message by id sent
 /**
  * Find and deletes message by ID sent
- * param deletionTarget: id of message to find and delete 
+ * param deletionTarget: id of message to find and delete
+ * param callback: fn(err, success)
+ *      success is true is message to delete was found 
  */
-Inbox.prototype.deleteMessageById = function deleteMessageById( deletionTarget ){
-    this.messages = this.messages.filter(function (element){
-        return element.id != deletionTarget;
+Inbox.prototype.deleteMessageById = function deleteMessageById( deletionTargetId, callback ){
+    console.log(deletionTargetId);
+    var found = this.messages.reduce(function (reduceVal, element, idx) {
+        return ( reduceVal || (element.id == deletionTargetId) ) 
+    },false);
+    
+    callback(null, found);
+    //continue with request, async data manips 
+    
+    this.messages = this.messages.filter(function (element, index){
+        return element.id != deletionTargetId;
     });
+    
 };
 
 //return array of objects made of only header info 

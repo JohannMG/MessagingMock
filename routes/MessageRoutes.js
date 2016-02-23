@@ -108,11 +108,9 @@ function renderedTemplate(textMode, subject, callback) {
 
 //TODO: set message read/unread by id
 router.put('/:messageId', function(req, res, next){
-    console.log(req.body);    
-    
+
     //Check message ID is an integer
-    var messageID = req.params.messageId;
-    if (messageID === undefined || isNaN(parseInt(messageID))){
+    if (req.params.messageId === undefined || isNaN(parseInt(req.params.messageId))){
         res.status(400).json({error:'Must supply id as an integer'});
         return;
     }
@@ -139,12 +137,40 @@ router.put('/:messageId', function(req, res, next){
         } else {
             res.status(404).json({error: 'Message was not found to update'});
         }
-    })
+    });
 
 });
 
 //TODO: delete message by id
-router.delete('/:messageId', function(req, res, next){ next(); });
+router.delete('/:messageId', function(req, res, next){
+    
+    //Check message ID is an integer
+    if (req.params.messageId === undefined || isNaN(parseInt(req.params.messageId))){
+        res.status(400).json({error:'Must supply id as an integer'});
+        return;
+    }
+    
+    //Check user exists
+    var inbox = userMessages[req.customerToken];
+    if (inbox === undefined){
+        res.status(404).json({error:'User not found, make sure to user / first to create inbox'});
+        return;
+    }
+    
+    inbox.deleteMessageById( req.params.messageId, function(err, successful){
+        if (successful){
+            res.set({
+                'X-Messages-Total': inbox.getTotalMessages(),
+                'X-Messages-Unread': inbox.getUnreadMessageCount()
+            });
+            res.status(204).send();
+        } else{
+            res.status(404).json({error:'Message to delete was not found'});
+        }
+    });
+    
+    
+});
 
 //send routing 'app' back 
 module.exports = router
