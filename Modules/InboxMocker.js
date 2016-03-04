@@ -51,7 +51,7 @@ Inbox.prototype.generateNewMessages = function generateNewMessages (count){
         
         //create new email object
         var newEmail = {};
-        newEmail.id  = Math.round(Math.random() * 1000000000000000);  
+        newEmail.id  = Math.round(Math.random() * 100000000);  
         newEmail.read = false;  
         newEmail.sent = moment(timestamp).toJSON();  
         newEmail.title = lipsum({ 
