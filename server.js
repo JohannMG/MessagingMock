@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var maxSupportedAPIVersion = 1 ;
 var messageRoutes = require('./routes/MessageRoutes');
 
+//FOR UPDATES
+var VERSION_NUM = 0.2;
 
 
 app.use(function (req, res, next) {
@@ -43,7 +45,7 @@ app.use('/api/*/customer/messages', messageRoutes);
 
 
 app.get('/', function indexroute(req, res) {
-    res.send("I'm up.");
+    res.send("I'm up. Ver:" + VERSION_NUM);
 });
 
 
