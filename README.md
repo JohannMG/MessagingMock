@@ -1,6 +1,6 @@
 # MessagingMock
 
-~Do not send anything confindetial to this testing API. It is not secure.~
+~Do not send anything confidential to this testing API. It is not secure.~
 
 Mocks the API endpoints for CCM App
  
