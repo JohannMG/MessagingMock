@@ -36,7 +36,7 @@ router.get('/', function rootMessages(req, res, next) {
     }
     
     //Check if existing inbox
-    if (userMessages[req.customerToken] != undefined){
+    if (userMessages[req.customerToken] !== undefined){
         userInbox = userMessages[req.customerToken];
     } else{
         //make new inbox otherwise
@@ -68,7 +68,7 @@ router.get('/:messageId', function(req, res, next){
     }
     
     //Have to compile the sample content here with Handlebars
-    var message = userInbox.getMessageById(req.params.messageId)
+    var message = userInbox.getMessageById(req.params.messageId);
     if (message === undefined){
         res.status(404).json({error:'Message not found for user. Make sure to use / endpoint first and that id is valid'});
         return;
@@ -85,7 +85,7 @@ router.get('/:messageId', function(req, res, next){
         
         //delete rendered body, we'll just re-render it if needed later rather than bloat memory
         delete message.body;
-    })
+    });
     
 });
 
@@ -102,9 +102,9 @@ function renderedTemplate(textMode, subject, callback) {
          var compiledSource = handlebars.compile(filetext);
          var body = compiledSource({subject});
          callback(null, body);
-     })
+     });
      
-};
+}
 
 //TODO: set message read/unread by id
 router.put('/:messageId', function(req, res, next){
@@ -174,4 +174,4 @@ router.delete('/:messageId', function(req, res, next){
 });
 
 //send routing 'app' back 
-module.exports = router
+module.exports = router;

@@ -17,6 +17,7 @@
     "handlebars": "^4.0.5",
     "helmet": "^1.1.0",
     "lorem-ipsum": "^1.0.3",
-    "moment": "^2.11.2"
+    "moment": "^2.11.2",
+    "validator": "^5.1.0"
   }
 }

@@ -78,7 +78,7 @@ Inbox.prototype.getMessageById = function getMessageById(id) {
     return this.messages.find(function (element) {
         return element.id == id;
     });
-}
+};
 
 //Find and delete message by id sent
 /**
@@ -90,7 +90,7 @@ Inbox.prototype.getMessageById = function getMessageById(id) {
 Inbox.prototype.deleteMessageById = function deleteMessageById( deletionTargetId, callback ){
 
     var found = this.messages.reduce(function (reduceVal, element, idx) {
-        return ( reduceVal || (element.id == deletionTargetId) ) 
+        return ( reduceVal || (element.id == deletionTargetId) ) ;
     },false);
     
     callback(null, found);
@@ -162,12 +162,12 @@ Inbox.prototype.getMessagesWithOffsetLimit = function getMessageWithOffsetLimit(
         pluckedMessages.push(this.messages[index]); 
     }
     
-    if (callback != undefined){
+    if (callback !== undefined){
         callback(null, pluckedMessages);
     }
     
     return pluckedMessages;
-}
+};
 
 
 

@@ -9,9 +9,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
  
 var maxSupportedAPIVersion = 1 ;
 var messageRoutes = require('./routes/MessageRoutes');
+var userRoutes = require('./routes/CreateLoginUserRoutes.js');  
 
 //FOR UPDATES
-var VERSION_NUM = 0.2;
+var VERSION_NUM = 0.3; //Adding Login Auth
 
 
 app.use(function (req, res, next) {
@@ -41,8 +42,11 @@ app.use('/api/:version', function (req, res, next) {
     }
 });
 
+//API for messages
 app.use('/api/*/customer/messages', messageRoutes);
 
+//Authentication / Log-in / Account Creation Endpoints
+app.use('/api/*/authentication', userRoutes);
 
 app.get('/', function indexroute(req, res) {
     res.send("I'm up. Ver:" + VERSION_NUM);

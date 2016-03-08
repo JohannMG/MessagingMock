@@ -1,9 +1,9 @@
 module.exports = function authcheck (req, res, next){
     var reqAuth = req.headers.authorization;
     
-    if ( reqAuth == undefined || reqAuth == ""){
+    if ( reqAuth === undefined || reqAuth === ""){
         res.status(401).json({error:"Missing Auth Header"});
-        return
+        return;
     }
     
     //Split between space for mode and user+pass
@@ -22,7 +22,7 @@ module.exports = function authcheck (req, res, next){
     //if empty, return as invalid request
     if (!(apikey) || !(customerToken)){
         res.status(401).json({error:'Missing API Key or Customer Token'});
-        return
+        return;
     }
     
     //If keys long enough, print last 4 digits to console
