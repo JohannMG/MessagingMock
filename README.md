@@ -7,9 +7,11 @@ Mocks the API endpoints for CCM App
 ##Implemented: 
 
 ###Accounts
-- Must use BASIC authentication to pass a mock API key. 
-- API docs specify that all accounts fields are sent as string literals. 
-- Returns random customerToken. Not actually valid.
+Must use BASIC authentication to pass a mock API key. base64(APIKEY)
+ 
+API docs specify that all accounts fields are sent as string literals.
+ 
+Returns random customerToken. Not actually valid.
 
 
 **8.1 Create User Account**
@@ -39,6 +41,8 @@ If you need a new inbox to work with (all messages have been deleted) use a new 
 
 8.10 Delete Customer Message
 
+
+How Basic Auth works https://developer.mozilla.org/en-US/docs/Web/HTTP/Basic_access_authentication
 
 ##Version Log
 
