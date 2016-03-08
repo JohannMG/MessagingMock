@@ -1,14 +1,9 @@
 # MessagingMock
 
-Mocks the API endpoints at `/api/v1/customer/messages/`
+~Do not send anything confindetial to this testing API. It is not secure.~
 
-Use `GET /api/v1/customer/messages/?offset=10&limit=100` before any other method for the test API to generate a 'mailbox' for the user. 
-
-Afterwards all API endpoints are to spec. 
-
-Spec does not yet show how HTML will formatted in JSON, so currently sends minified HTML that uses single quotes to not interfere with JSON standard double quotes.  
-
-
+Mocks the API endpoints for CCM App
+ 
 ##Implemented: 
 
 ###Accounts
@@ -38,10 +33,21 @@ If you need a new inbox to work with (all messages have been deleted) use a new 
 
 
 8.8 Get Customer Message
-- API spec does not yet specify how the html will be sent in the JSON response. Right now it's inline and clean of double quotes.   
+- API Spec does not yet show how HTML will formatted in JSON, so currently sends minified HTML that uses single quotes to not interfere with JSON standard double quotes.     
 
 8.9 Update Customer Message
 
 8.10 Delete Customer Message
 
 
+##Log
+
+**0.3**
+Added User Accounts endpoints
+
+**0.2**
+Changed message IDs to be 32-bit
+
+**0.1**
+Initial push to AWS with messages endpoints
+  
