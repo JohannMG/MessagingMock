@@ -32,7 +32,7 @@ If you need a new inbox to work with (all messages have been deleted) use a new 
 - Must call this endpoint to establish a new "inbox" for that user id
 
 
-8.8 Get Customer Message
+**8.8 Get Customer Message**
 - API Spec does not yet show how HTML will formatted in JSON, so currently sends minified HTML that uses single quotes to not interfere with JSON standard double quotes.     
 
 8.9 Update Customer Message
@@ -40,7 +40,7 @@ If you need a new inbox to work with (all messages have been deleted) use a new 
 8.10 Delete Customer Message
 
 
-##Log
+##Version Log
 
 **0.3**
 Added User Accounts endpoints
