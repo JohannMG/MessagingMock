@@ -19,21 +19,29 @@ Spec does not yet show how HTML will formatted in JSON, so currently sends minif
 
 **8.1 Create User Account**
 
-If all fields valid strings and email validates as well returns successfully. Does not check numbers right now. 
-
-To simulate a 404 response, send a memebership number of all zeros(0). 
-
-To simulate a 409 response, send a zipcode of all zeros(0).
+- If all fields valid strings and email validates as well returns successfully. Does not check numbers right now. 
+- To simulate a 404 response, send a memebership number of all zeros(0). 
+- To simulate a 409 response, send a zipcode of all zeros(0).
 
 **8.2 Authenticate User**
 
-If all required fields are strings, returns normal response.
+- If all required fields are strings, returns normal response.
+- To simulate incorrent login pass username as "failauth" or either password or username as empty strings.
+
+
+###Messages
+Uses Basic Auth base64(MockAPIToken + ":" + MockUserID)
+If you need a new inbox to work with (all messages have been deleted) use a new UserID for a new mock inbox of messages
  
-To simulate incorrent login pass username as "failauth" or either password or username as empty strings.
+**8.7 Get Customer Messages**
+- Must call this endpoint to establish a new "inbox" for that user id
 
 
-###Messages 
-8.7 Get Customer Messages
 8.8 Get Customer Message
+- API spec does not yet specify how the html will be sent in the JSON response. Right now it's inline and clean of double quotes.   
+
 8.9 Update Customer Message
+
 8.10 Delete Customer Message
+
+
