@@ -12,7 +12,7 @@ var messageRoutes = require('./routes/MessageRoutes');
 var userRoutes = require('./routes/CreateLoginUserRoutes.js');  
 
 //FOR UPDATES
-var VERSION_NUM = 0.3; //Adding Login Auth
+var VERSION_NUM = 0.4; //upping message value
 
 
 app.use(function (req, res, next) {

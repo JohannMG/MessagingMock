@@ -46,6 +46,9 @@ How Basic Auth works https://developer.mozilla.org/en-US/docs/Web/HTTP/Basic_acc
 
 ##Version Log
 
+**0.4**
+New user inbox now initialized with 123 messages
+
 **0.3**
 Added User Accounts endpoints
 

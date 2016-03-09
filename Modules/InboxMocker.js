@@ -28,7 +28,7 @@ var lipsum = require('lorem-ipsum');
  */
 
 function Inbox(details){
-    details = details || {count: 23};
+    details = details || {count: 123};
     
     //get messages, will be sorted automatically
     this.messages = this.generateNewMessages( details.count ) ;
