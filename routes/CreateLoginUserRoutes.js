@@ -3,6 +3,9 @@ var router = express.Router();
 var validator = require('validator');
 var moment = require('moment');
 
+var Users = require('../UserProfiles.js');
+var loginProfiles = new Users();
+
 //var mockAuthenticator = require('../Modules/AuthChecker.js');
 
 
@@ -146,19 +149,33 @@ router.put('/', function authUser(req, res, next) {
     
     //purposeful fail inputs are username: failauth, password: *
     if (req.body.username === "failauth" || req.body.username.trim() === "" || req.body.password.trim() === ""){
-        res.status(401).json({'error': 'The specified suername and password could not be authenticated.'});
+        res.status(401).json({'error': 'The specified username and password could not be authenticated.'});
         return;
     } 
     
-    //else if all the fields are valid, test endpoint will always authenticated
-    
-    res.status(200).json({
-        username: req.body.username.trim(),
-        customerToken: randomUserToken(), 
-        expiration: moment().add(3, 'months').toJSON(),
-        lastAuthentication: moment().subtract(10, 'days').toJSON()
-    });
-    
+    //Either to be in the specified userprofiles    
+    if (loginProfiles.authenticatesWithUserPass(req.body.username, req.body.password)){
+        res.status(200).json({
+            username: req.body.username, 
+            customerToken: loginProfiles.getTokenForUsername( req.body.username ),
+            expiration: moment().add(3, 'months').toJSON(),
+            lastAuthentication: moment().subtract(10, 'days').toJSON()
+        });
+        return;
+        
+    } else if ( req.body.username.startsWith('please') ){ // or wildcard prefix login
+        
+        res.status(200).json({
+            username: req.body.username.trim(),
+            customerToken: randomUserToken(), 
+            expiration: moment().add(3, 'months').toJSON(),
+            lastAuthentication: moment().subtract(10, 'days').toJSON()
+        });
+        return;
+    } 
+
+    //otherwise fails    
+    res.status(401).send('The specified username and password could not be authenticated.');
     
     
 });
