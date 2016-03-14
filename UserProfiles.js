@@ -33,8 +33,7 @@ UserProfiles.prototype.authenticatesWithUserPass = function authenticatesWithUse
     password = password.trim().toUpperCase();
     
     return this.profiles.reduce( function (previousVal, currVal, index, arr) {
-        console.log(currVal);
-        return previousVal ||  ( username === currVal.username.toUpperCase()  && password === currVal.username.toUpperCase() );
+        return previousVal ||  ( username === currVal.username.toUpperCase()  && password === currVal.password.toUpperCase() );
           
     },false);    
    } ;
