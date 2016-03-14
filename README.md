@@ -25,6 +25,14 @@ Returns random customerToken. Not actually valid.
 - If all required fields are strings, returns normal response.
 - To simulate incorrent login pass username as "failauth" or either password or username as empty strings.
 
+List of Username / Password that can authenticate
+- kodak@aaa.com / kodak
+- fuji@aaa.com / fuji 
+- imax@aaa.com / imax
+- arri@aaa.com / arri
+- cooke@aaa.com / cooke
+- please* / *  (wildcard login) 
+
 
 ###Messages
 Uses Basic Auth base64(MockAPIToken + ":" + MockUserID)
@@ -47,7 +55,7 @@ How Basic Auth works https://developer.mozilla.org/en-US/docs/Web/HTTP/Basic_acc
 ##Version Log
 
 **0.5**
-Intro of user profiles. Only they can log in
+Intro of user profiles. Only they can log in.
 
 **0.4**
 New user inbox now initialized with more messages
