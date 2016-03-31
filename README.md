@@ -9,9 +9,10 @@ Mocks the API endpoints for CCM App
 
  ##App Menu Content
  
- **TODO: Get Content**
+ **Get Content**
  <br/>_GET /api/{v1}/content/{id e.g., 'MyAAA'}_ 
  
+ - MyAAA now works for logged in and logged out users 
  
 ##Accounts
 Must use BASIC authentication to pass a mock API key. base64(APIKEY)
