@@ -64,10 +64,10 @@ If you need a new inbox to work with (all messages have been deleted) use a new 
 
 - API Spec does not yet show how HTML will formatted in JSON, so currently sends minified HTML that uses single quotes to not interfere with JSON standard double quotes.     
 
-Update Customer Message
+**Update Customer Message**
 <br/>_PUT /api/{v1}/customer/messages/{id}_
 
-Delete Customer Message
+**Delete Customer Message**
 <br/>_DELETE /api/{v1}/customer/messages/{id}_
 
 ##KALPA
