@@ -5,7 +5,7 @@
 Mocks the API endpoints for CCM App
  
  
- ##App & Menu Content
+ ##App + Menu Content
  
  **TODO: Get Content**
  <br/>_GET /api/{v1}/content/{id e.g., 'MyAAA'}_ 
