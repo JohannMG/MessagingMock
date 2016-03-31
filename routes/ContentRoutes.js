@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 //require loads and caches the json file automatically at server load. I <3 node sometimes... 
-var LOGGED_IN_TEMPLATE  = require('../menu-templates/MyAAA-Guest.json');
-var LOGGED_OUT_TEMPLATE = require('../menu-templates/MyAAA-LoggedIn.json');
+var LOGGED_OUT_TEMPLATE  = require('../menu-templates/MyAAA-Guest.json');
+var LOGGED_IN_TEMPLATE = require('../menu-templates/MyAAA-LoggedIn.json');
 
 var userIsLoggedIn = false;
 
@@ -39,13 +39,14 @@ function loggedInOrOutUser(req, res, next){
         res.status(401).json({error:'Missing API Key or Customer Token'});
         return;
     }
-    
+        
     //set logged in 
     userIsLoggedIn = ( customerToken !== undefined && customerToken.length > 0 ); 
  
     next();   
 }
 
+//hit auth function 
 router.use(loggedInOrOutUser);
 
 router.get('/', function (req, res, next) {
@@ -53,21 +54,15 @@ router.get('/', function (req, res, next) {
 });
 
 router.get('/MyAAA', function (req, res, next) {
-    
+        
     if (userIsLoggedIn){
         res.status(200).json(LOGGED_IN_TEMPLATE);
         
     } else{
-        res.send(200).json(LOGGED_OUT_TEMPLATE);
+        res.status(200).json(LOGGED_OUT_TEMPLATE);
     }
     
 });
-
-
-
-
- 
- 
  
  //sending routing mini-'app' back
  module.exports = router;
