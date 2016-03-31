@@ -5,7 +5,8 @@
 Mocks the API endpoints for CCM App
  
  
- ## App & Menu Content
+ ##App & Menu Content
+ 
  **TODO: Get Content**
  <br/>_GET /api/{v1}/content/{id e.g., 'MyAAA'}_ 
  
@@ -74,7 +75,7 @@ If you need a new inbox to work with (all messages have been deleted) use a new 
 
 **TODO: Get and Update KALPA Resources**
 <br/>_GET /api/{v1}/kalpa/{KALPA-API-URL}_
--401 is Customer Token not found
+- 401 is Customer Token not found
 
 ##Geo-Location 
 
