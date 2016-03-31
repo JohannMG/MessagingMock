@@ -91,6 +91,9 @@ How Basic Auth works https://developer.mozilla.org/en-US/docs/Web/HTTP/Basic_acc
 
 ##Version Log
 
+**0.6**
+Added the MyAAA menu endpoint for both logged in and out users.  
+
 **0.5**
 Intro of user profiles. Only they can log in.
 

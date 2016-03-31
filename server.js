@@ -1,4 +1,4 @@
-var helmet = require('helmet');
+var helmet = require('helmet'); 
 var express = require('express');
 var bodyParser = require('body-parser');
 var app = express();
@@ -10,9 +10,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 var maxSupportedAPIVersion = 1 ;
 var messageRoutes = require('./routes/MessageRoutes');
 var userRoutes = require('./routes/CreateLoginUserRoutes.js');  
+var contentRoutes = require('./routes/ContentRoutes');
 
 //FOR UPDATES
-var VERSION_NUM = 0.5; //upping message value
+var VERSION_NUM = 0.6; //Adding MyAAA 
 
 
 app.use(function (req, res, next) {
@@ -47,6 +48,9 @@ app.use('/api/*/customer/messages', messageRoutes);
 
 //Authentication / Log-in / Account Creation Endpoints
 app.use('/api/*/authentication', userRoutes);
+
+//Add MyAAA / Get Content endpoints 
+app.use('/api/*/content', contentRoutes);
 
 app.get('/', function indexroute(req, res) {
     res.send("I'm up. Ver:" + VERSION_NUM);

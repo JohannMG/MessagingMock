@@ -105,8 +105,9 @@ function renderedTemplate(textMode, subject, callback) {
      });
      
 }
-
-//TODO: set message read/unread by id
+/**
+ * Sets message read or unread
+ */
 router.put('/:messageId', function(req, res, next){
 
     //Check message ID is an integer
@@ -142,7 +143,9 @@ router.put('/:messageId', function(req, res, next){
 
 });
 
-//TODO: delete message by id
+/**
+ * Deletes a specific message
+ */
 router.delete('/:messageId', function(req, res, next){
     
     //Check message ID is an integer

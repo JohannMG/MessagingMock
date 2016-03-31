@@ -1,3 +1,10 @@
+/**
+ * For routes that REQUIRE a logged in user
+ * Checks that user is 'logged in', 
+ * if user is not logged in, returns proper error codes
+ * If logged in, adds the customer token to req.customerToken
+ */
+
 module.exports = function authcheck (req, res, next){
     var reqAuth = req.headers.authorization;
     
