@@ -7,14 +7,6 @@
                 "Text": null,
                 "Content": [
                     {
-                        "Type": "HTML",
-                        "Subtype": "ICP",
-                        "Html": [
-                            "<p>Congratulations! You have earned a new badge for logging 100 miles in AAADrive this week.</p>",
-                            "<a href='http://autoclubsouth.aaa.com/Mobile/Gift.aspx'>View all badges</a>"
-                        ]
-                    },
-                    {
                         "Type": "MENU",
                         "Menu": [
                             {
@@ -25,16 +17,19 @@
                             },
                             {
                                 "Text": "Insurance",
+                                "Subtext": null,
                                 "Type": "NAV",
                                 "Link": "MyAAA/Insurance"
                             },
                             {
                                 "Text": "Travel",
+                                "Subtext": null,
                                 "Type": "NAV",
                                 "Link": "MyAAA/Travel"
                             },
                             {
                                 "Text": "Banking",
+                                "Subtext": null,
                                 "Type": "NAV",
                                 "Link": "MyAAA/Banking"
                             }
@@ -50,6 +45,7 @@
                         "Menu": [
                             {
                                 "Text": "My places",
+                                "Subtext": null,
                                 "Type": "NAV",
                                 "Link": "MyAAA/MyPlaces"
                             }
@@ -71,34 +67,39 @@
                         "Menu": [
                             {
                                 "Text": "Membership profile",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/Profile"
                             },
                             {
                                 "Text": "Renew membership",
-                                "Highlight": true,
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/Renew"
                             },
                             {
                                 "Text": "Upgrade membership level",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/MembershipLevels"
                             },
                             {
                                 "Text": "Add a family member",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/AddFamilyMember"
                             },
                             {
                                 "Text": "View/Change billing information",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/Billing"
                             },
                             {
                                 "Text": "Make a payment",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/Payment"
                             }
                         ]
                     }
@@ -112,48 +113,57 @@
                         "Menu": [
                             {
                                 "Text": "Roadside Assistance",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/RoadsideAssistance"
                             },
                             {
                                 "Text": "AAA mobile battery service",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/MobileBatteryService"
                             },
                             {
                                 "Text": "AAA approved auto repair",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/ApprovedAutoRepair"
                             },
                             {
                                 "Text": "AAA Savings",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/Savings"
                             },
                             {
                                 "Text": "Referral program",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/ReferralProgram"
                             },
                             {
                                 "Text": "AAA auto buying service",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/AutoBuyingService"
                             },
                             {
                                 "Text": "ID theft monitoring",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/IDTheftMonitoring"
                             },
                             {
                                 "Text": "Severe weather alerts",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/SevereWeatherAlerts"
                             },
                             {
                                 "Text": "AAADrive™",
+                                "Subtext": null,
                                 "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Link": "MyAAA/Membership/AAADrive"
                             }
                         ]
                     }
@@ -169,8 +179,29 @@
                 "Text": null,
                 "Content": [
                     {
-                        "Type": "SOURCE",
-                        "Source": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                        "Type": "HTML",
+                        "Html": [
+                            "<div class='membership_level'>",
+                            "   <header>C L A S S I C ®</header>",
+                            "   <aside>",
+                            "       $66.00<br/>",
+                            "       <img src='Classic.jpg' />",
+                            "   </aside>",
+                            "   <ul>",
+                            "       <li><b>5</b> miles of towing</li>",
+                            "       <li>Fuel delivery</li>",
+                            "       <li><b>$600</b> in car travel interruption expenses</li>",
+                            "       <li><b>$50</b> in locksmith insurance</li>",
+                            "       <li><b>$100,000</b> travel insurance</li>",
+                            "   </ul>",
+                            "   <p>First additional member: <b>1 year free</b></p>",
+                            "   <p>Each additional member: <b>$15 per year</b></p>",
+                            "   <footer>",
+                            "       <button>Choose Classic</button>",
+                            "       <a href='...'>See full list of benefits</a>",
+                            "   </footer>",
+                            "</div>"
+                        ]
                     }
                 ]
             },
@@ -178,8 +209,31 @@
                 "Text": null,
                 "Content": [
                     {
-                        "Type": "SOURCE",
-                        "Source": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                        "Type": "HTML",
+                        "Html": [
+                            "<div class='membership_level'>",
+                            "   <header>P L U S ®</header>",
+                            "   <aside>",
+                            "       $101.00<br/>",
+                            "       <img src='Plus.jpg' />",
+                            "   </aside>",
+                            "   <ul>",
+                            "       <li><b>100</b> miles of towing</li>",
+                            "       <li>Free fuel delivery</li>",
+                            "       <li><b>$1,000</b> in car travel interruption expenses</li>",
+                            "       <li><b>$100</b> in locksmith insurance</li>",
+                            "       <li><b>$300,000</b> travel insurance</li>",
+                            "       <li>Reduced airline fees</li>",
+                            "   </ul>",
+                            "   <p>First additional member: <b>$24 per year</b></p>",
+                            "   <p>Each additional member: <b>$39 per year</b></p>",
+                            "   <footer>",
+                            "       <button>Choose Plus</button>",
+                            "       <a href='...'>See full list of benefits</a>",
+                            "       <p>AAA Plus® roadside assistance benefits available three<br/>days after payment has been processed.</p>",
+                            "   </footer>",
+                            "</div>"
+                        ]
                     }
                 ]
             },
@@ -187,8 +241,32 @@
                 "Text": null,
                 "Content": [
                     {
-                        "Type": "SOURCE",
-                        "Source": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                        "Type": "HTML",
+                        "Html": [
+                            "<div class='membership_level_summary'>",
+                            "   <header>P R E M I E R ®</header>",
+                            "   <aside>",
+                            "       $127.00<br/>",
+                            "       <img src='Premier.jpg' />",
+                            "   </aside>",
+                            "   <ul>",
+                            "       <li><b>200</b> miles of towing</li>",
+                            "       <li>Free fuel delivery</li>",
+                            "       <li><b>$1,500</b> in car travel interruption expenses</li>",
+                            "       <li><b>$150</b> in locksmith insurance</li>",
+                            "       <li><b>$500,000</b> travel insurance</li>",
+                            "       <li>No airline fees</li>",
+                            "       <li>Premium travel and assistance benefits</li>",
+                            "   </ul>",
+                            "   <p>First additional member: <b>$35 per year</b></p>",
+                            "   <p>Each additional member: <b>$50 per year</b></p>",
+                            "   <footer>",
+                            "       <button>Choose Premier</button>",
+                            "       <a href='...'>See full list of benefits</a>",
+                            "       <p>AAA Premier® roadside assistance benefits available three<br/>days after payment has been processed.</p>",
+                            "   </footer>",
+                            "</div>"
+                        ]
                     }
                 ]
             }
@@ -202,8 +280,54 @@
                 "Text": null,
                 "Content": [
                     {
-                        "Type": "SOURCE",
-                        "Source": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                        "Type": "HTML",
+                        "Html": [
+                            "<div class='membership_level_details'>",
+                            "   <img src='ClassicBanner.jpg' />",
+                            "   <h1>Benefits of AAA<br/>Classic Membership</h1>",
+                            "   <aside>",
+                            "       $66.00<br/>",
+                            "       <button>Join AAA</button>",
+                            "   </aside>",
+                            "   <p>Classic membership gives you access to the #1-rated roadside assistance service in the nation, incredible savings with the largest member discount program in the world, and more.</p>",
+                            "   <p>First additional member: <b>1 year free</b></p>",
+                            "   <p>Each additional member: <b>$15 for the first year</b></p>",
+                            "   <hr/>",
+                            "   <h2>Auto Rescue</h2>",
+                            "   <ul>",
+                            "       <li>Up to four 5-mile tows</li>",
+                            "       <li>Emergency starting</li>",
+                            "       <li>Free mobile battery service</li>",
+                            "       <li>Flat tire service</li>",
+                            "       <li>Fuel service delivery - you pay fuel</li>",
+                            "       <li>Vehicle locksmith, up to $50 for lockout only</li>",
+                            "       <li>Extrication/winching</li>",
+                            "   </ul>",
+                            "   <h2>Travel</h2>",
+                            "   <ul>",
+                            "       <li>Free access to AAA TripTik travel planner and AAA TourBook guides</li>",
+                            "       <li>AAA approved lodging and hotel ratings</li>",
+                            "       <li>Nominal fee for Passport photos</li>",
+                            "       <li>Car travel interruption up to $600</li>",
+                            "       <li>Free travel accident insurance for AAA travel up to $100,000</li>",
+                            "       <li>Free Hertz gold plus rewards membership + 675 Hertz rewards points after first gold rental</li>",
+                            "   </ul>",
+                            "   <h2>Bonus Benefits</h2>",
+                            "   <ul>",
+                            "       <li>Free emergency check cashing</li>",
+                            "       <li>Everyday savings at more than 100,000 partner locations worldwide</li>",
+                            "       <li>Free insurance policy review and quotes</li>",
+                            "       <li>Legal service fee reimbursement:<br/>",
+                            "           Manslaughter - $500<br/>",
+                            "           Reckless driving - $250<br/>",
+                            "           Minor traffic violations - $100",
+                            "       </li>",
+                            "   </ul>",
+                            "   <footer>",
+                            "       <button>Join AAA now</button>",
+                            "   </footer>",
+                            "</div>"
+                        ]
                     }
                 ]
             }
@@ -217,8 +341,54 @@
                 "Text": null,
                 "Content": [
                     {
-                        "Type": "SOURCE",
-                        "Source": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                        "Type": "HTML",
+                        "Html": [
+                            "<div class='membership_level_details'>",
+                            "   <img src='PlusBanner.jpg' />",
+                            "   <h1>Benefits of AAA<br/>Plus Membership</h1>",
+                            "   <aside>",
+                            "       $101.00<br/>",
+                            "       <button>Join AAA</button>",
+                            "   </aside>",
+                            "   <p>Plus membership gives you all the benefits available in Classic, plus the added protection and savings that matter most when you're traveling on the road and caring for your car.</p>",
+                            "   <p>First additional member: <b>$24 per year</b></p>",
+                            "   <p>Each additional member: <b>$39 for the first year</b></p>",
+                            "   <hr/>",
+                            "   <h2>Auto Rescue</h2>",
+                            "   <ul>",
+                            "       <li>Up to four 5-mile tows (except Nebraska which is four 10-mile tows)</li>",
+                            "       <li>Emergency starting</li>",
+                            "       <li>Free mobile battery service</li>",
+                            "       <li>Flat tire service</li>",
+                            "       <li>Fuel service delivery</li>",
+                            "       <li>Vehicle locksmith up to $100</li>",
+                            "       <li>Extrication/winching</li>",
+                            "   </ul>",
+                            "   <h2>Travel</h2>",
+                            "   <ul>",
+                            "       <li>Free access to AAA TripTik travel planner and AAA TourBook guides</li>",
+                            "       <li>AAA approved lodging and hotel ratings</li>",
+                            "       <li>Two free sets of Passport photos per member per year</li>",
+                            "       <li>Car travel interruption up to $1,000</li>",
+                            "       <li>Free travel accident insurance for AAA travel up to $300,000</li>",
+                            "       <li>Free Hertz gold plus rewards membership + 675 Hertz rewards points after first gold rental</li>",
+                            "   </ul>",
+                            "   <h2>Bonus Benefits</h2>",
+                            "   <ul>",
+                            "       <li>Free emergency check cashing</li>",
+                            "       <li>Everyday savings at more than 100,000 partner locations worldwide</li>",
+                            "       <li>Free insurance policy review and quotes</li>",
+                            "       <li>Legal service fee reimbursement:<br/>",
+                            "           Manslaughter - $1,500<br/>",
+                            "           Reckless driving - $500<br/>",
+                            "           Minor traffic violations - $200",
+                            "       </li>",
+                            "   </ul>",
+                            "   <footer>",
+                            "       <button>Join AAA now</button>",
+                            "   </footer>",
+                            "</div>"
+                        ]
                     }
                 ]
             }
@@ -232,8 +402,59 @@
                 "Text": null,
                 "Content": [
                     {
-                        "Type": "SOURCE",
-                        "Source": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                        "Type": "HTML",
+                        "Html": [
+                            "<div class='membership_level_details'>",
+                            "   <img src='PremierBanner.jpg' />",
+                            "   <h1>Benefits of AAA<br/>Premier Membership</h1>",
+                            "   <aside>",
+                            "       $127.00<br/>",
+                            "       <button>Join AAA</button>",
+                            "   </aside>",
+                            "   <p>Premier Membership entitles you to the highest level of AAA benefits and services available. Personal assistance and travel luxuries give you the most exclusive ways yo save time and money on and off the road.</p>",
+                            "   <p>First additional member: <b>$35 per year</b></p>",
+                            "   <p>Each additional member: <b>$50 for the first year</b></p>",
+                            "   <hr/>",
+                            "   <h2>Auto Rescue</h2>",
+                            "   <ul>",
+                            "       <li>One 200-mile tow</li>",
+                            "       <li>Up to three 100-mile tows</li>",
+                            "       <li>Emergency starting</li>",
+                            "       <li>Free mobile battery service</li>",
+                            "       <li>Flat tire service</li>",
+                            "       <li>Fuel service delivery</li>",
+                            "       <li>Complimentary one-day car rental with qualifying tow</li>",
+                            "       <li>Vehicle locksmith up to $150</li>",
+                            "       <li>Extrication/winching</li>",
+                            "   </ul>",
+                            "   <h2>Travel</h2>",
+                            "   <ul>",
+                            "       <li>Free access to AAA TripTik travel planner and AAA TourBook guides</li>",
+                            "       <li>AAA approved lodging and hotel ratings</li>",
+                            "       <li>Waived airline fees</li>",
+                            "       <li>Free unlimited sets of Passport photos per member per year</li>",
+                            "       <li>Car travel interruption up to $1,500</li>",
+                            "       <li>Free travel accident insurance for AAA travel up to $500,000</li>",
+                            "       <li>Free Hertz gold plus rewards membership + 1,100 Hertz rewards points after first gold rental</li>",
+                            "   </ul>",
+                            "   <h2>Bonus Benefits</h2>",
+                            "   <ul>",
+                            "       <li>Free emergency check cashing</li>",
+                            "       <li>24-hour concierge service</li>",
+                            "       <li>24-hour emergency medical services</li>",
+                            "       <li>Everyday savings at more than 160,000 partner locations worldwide</li>",
+                            "       <li>Free insurance policy review and quotes</li>",
+                            "       <li>Legal service fee reimbursement:<br/>",
+                            "           Manslaughter - $1,500<br/>",
+                            "           Reckless driving - $500<br/>",
+                            "           Minor traffic violations - $200",
+                            "       </li>",
+                            "   </ul>",
+                            "   <footer>",
+                            "       <button>Join AAA now</button>",
+                            "   </footer>",
+                            "</div>"
+                        ]
                     }
                 ]
             }
@@ -251,13 +472,15 @@
                         "Menu": [
                             {
                                 "Text": "Get a quote",
-                                "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Subtext":  null,
+                                "Type":  "NAV",
+                                "Link": "MyAAA/Insurance/GetQuote"
                             },
                             {
                                 "Text": "Contact my agent",
-                                "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Subtext":  null,
+                                "Type":  "NAV",
+                                "Link": "MyAAA/Insurance/ContactAgent"
                             }
                         ]
                     }
@@ -271,23 +494,27 @@
                         "Menu": [
                             {
                                 "Text": "Make a payment",
-                                "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Subtext":  null,
+                                "Type":  "NAV",
+                                "Link": "MyAAA/Insurance/AutoMakePayment"
                             },
                             {
                                 "Text": "Active claims",
-                                "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Subtext":  null,
+                                "Type":  "NAV",
+                                "Link": "MyAAA/Insurance/AutoActiveClaims"
                             },
                             {
                                 "Text": "File a claim",
-                                "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Subtext":  null,
+                                "Type":  "NAV",
+                                "Link": "MyAAA/Insurance/AutoFileClaim"
                             },
                             {
                                 "Text": "View policy information",
-                                "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Subtext":  null,
+                                "Type":  "NAV",
+                                "Link": "MyAAA/Insurance/AutoPolicyInformation"
                             }
                         ]
                     }
@@ -301,23 +528,27 @@
                         "Menu": [
                             {
                                 "Text": "Make a payment",
-                                "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Subtext":  null,
+                                "Type":  "NAV",
+                                "Link": "MyAAA/Insurance/HomeMakePayment"
                             },
                             {
                                 "Text": "Active claims",
-                                "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Subtext":  null,
+                                "Type":  "NAV",
+                                "Link": "MyAAA/Insurance/HomeActiveClaims"
                             },
                             {
                                 "Text": "File a claim",
-                                "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Subtext":  null,
+                                "Type":  "NAV",
+                                "Link": "MyAAA/Insurance/HomeFileClaim"
                             },
                             {
                                 "Text": "View policy information",
-                                "Type": "NAV",
-                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                                "Subtext":  null,
+                                "Type":  "NAV",
+                                "Link": "MyAAA/Insurance/HomePolicyInformation"
                             }
                         ]
                     }
