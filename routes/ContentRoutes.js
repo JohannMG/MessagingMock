@@ -10,6 +10,7 @@ var userIsLoggedIn = false;
 /**
  * Checks is user is logged in or not by checking user token
  * Sets as  
+ *  TODO: REplace with module
  */
 function loggedInOrOutUser(req, res, next){
     

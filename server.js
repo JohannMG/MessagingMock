@@ -11,9 +11,10 @@ var maxSupportedAPIVersion = 1 ;
 var messageRoutes = require('./routes/MessageRoutes');
 var userRoutes = require('./routes/CreateLoginUserRoutes.js');  
 var contentRoutes = require('./routes/ContentRoutes');
+var customerDataRoutes = require('./routes/CustomerRoutes');
 
 //FOR UPDATES
-var VERSION_NUM = 0.6; //Adding MyAAA 
+var VERSION_NUM = 0.7; //See README.md 
 
 
 app.use(function (req, res, next) {
@@ -43,6 +44,9 @@ app.use('/api/:version', function (req, res, next) {
     }
 });
 
+//Endpoints for Customer Data
+app.use('/api/*/customer', customerDataRoutes);
+
 //API for messages
 app.use('/api/*/customer/messages', messageRoutes);
 
@@ -51,6 +55,7 @@ app.use('/api/*/authentication', userRoutes);
 
 //Add MyAAA / Get Content endpoints 
 app.use('/api/*/content', contentRoutes);
+
 
 app.get('/', function indexroute(req, res) {
     res.send("I'm up. Ver:" + VERSION_NUM);
