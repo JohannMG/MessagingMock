@@ -36,18 +36,16 @@ Returns random customerToken. Not actually valid.
 - To simulate incorrent login pass username as "failauth" or either password or username as empty strings.
 
 List of Username / Password that can authenticate
-- kodak@aaa.com / kodak
-- fuji@aaa.com / fuji 
-- imax@aaa.com / imax
-- arri@aaa.com / arri
-- cooke@aaa.com / cooke
+- kodak@aaa.com / kodak12345
+- fuji@aaa.com / fuji12345
+- imax@aaa.com / imax12345
+- arri@aaa.com / arri12345
+- cooke@aaa.com / cooke12345
 - please* / *  (wildcard login) 
 
-**TODO: Get User Authentication**
+**Get User Authentication**
 <br/>_GET /api/{v1}/authentication_
 
-**TODO: Update Customer**
-<br/>_PUT /api/{v1}/customer_
 
 **TODO: Get Customer**
 <br/>_GET /api/{v1}/customer_
@@ -91,6 +89,11 @@ If you need a new inbox to work with (all messages have been deleted) use a new 
 How Basic Auth works https://developer.mozilla.org/en-US/docs/Web/HTTP/Basic_access_authentication
 
 ##Version Log
+
+**0.7** 
+Update MyAAA JSON to latest specs— Now includes ICP Message
+All default passwords now appended with 12345 to meet length expectations. 
+
 
 **0.6**
 Added the MyAAA menu endpoint for both logged in and out users.  

@@ -49,11 +49,12 @@ function loggedInOrOutUser(req, res, next){
 //hit auth function 
 router.use(loggedInOrOutUser);
 
-router.get('/', function (req, res, next) {
-    res.status(404).json({ error: 'Must provide an <id> after url' });
-});
+//Endpoint for ACG no longer requires an id
+// router.get('/', function (req, res, next) {
+//     res.status(404).json({ error: 'Must provide an <id> after url' });
+// });
 
-router.get('/MyAAA', function (req, res, next) {
+router.get('/', function (req, res, next) {
         
     if (userIsLoggedIn){
         res.status(200).json(LOGGED_IN_TEMPLATE);
