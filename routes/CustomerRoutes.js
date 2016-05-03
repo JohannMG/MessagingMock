@@ -5,6 +5,8 @@ var loggedInCheck = require('../Modules/AuthChecker.js');
 
 
 router.get('/', loggedInCheck, function getCustomer(req, res, next) {
+    
+    res.set('AAA-Profile-Completion', 100);
         
     //Mock data provided by API docs
     res.status(200).json({
