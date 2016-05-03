@@ -55,7 +55,7 @@ router.use(loggedInOrOutUser);
 //     res.status(404).json({ error: 'Must provide an <id> after url' });
 // });
 
-router.get('/', function (req, res, next) {
+router.get('/*', function (req, res, next) {
         
     if (userIsLoggedIn){
         res.status(200).json(LOGGED_IN_TEMPLATE);
