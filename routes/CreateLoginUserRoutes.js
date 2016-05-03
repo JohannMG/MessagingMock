@@ -4,6 +4,7 @@ var validator = require('validator');
 var moment = require('moment');
 
 var Users = require('../UserProfiles.js');
+var loggedInCheck = require('../Modules/AuthChecker.js'); 
 var loginProfiles = new Users();
 
 //var mockAuthenticator = require('../Modules/AuthChecker.js');
@@ -25,6 +26,34 @@ router.use(function checkHasAuthHeader(req, res, next) {
     
     next();
 });
+
+/**
+ * Endpoint to check if token always validated
+ * No parametes. Must be authenticated with BASIC Auth of APIKey: Customer Token
+ * Uses AuthChecker.js to validate proper BASIC auth for logged in user provided. 
+ *      When success, adds customer token to  req.customerToken
+ * 
+ * Response ------ 
+ * Username: !This is not stored, so DUMMY VALUE provided!
+ * CustomerToken: Will match what sent if sent valid BASIC Auth
+ * Expiration: Date in format 2016-02-28T10:00:00
+ * LastAuthenticated:  Date in format 2016-02-28T10:00:00
+ */
+
+router.get('/', loggedInCheck, function getUserAuthentication(req, res, next) {
+   
+    //only runs after loggedInCheck passes
+    res.status(200).json({
+        username: "example@AAAexample.com", 
+        customerToken: req.customerToken,
+        expiration: moment().add(3, 'months').toJSON(),
+        lastAuthentication: moment().subtract(10, 'days').toJSON()
+    });
+    
+});
+
+
+
 
 /**
  * endpoint to create an account
