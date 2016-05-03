@@ -47,7 +47,7 @@ List of Username / Password that can authenticate
 <br/>_GET /api/{v1}/authentication_
 
 
-**TODO: Get Customer**
+**Get Customer**
 <br/>_GET /api/{v1}/customer_
 
 
@@ -91,9 +91,9 @@ How Basic Auth works https://developer.mozilla.org/en-US/docs/Web/HTTP/Basic_acc
 ##Version Log
 
 **0.7** 
-Update MyAAA JSON to latest specs— Now includes ICP Message
-All default passwords now appended with 12345 to meet length expectations. 
-
+- All default passwords now appended with 12345 to meet length expectations.
+- Adds Get Customer endpoint
+- Adds Get Authentication endpoint
 
 **0.6**
 Added the MyAAA menu endpoint for both logged in and out users.  
