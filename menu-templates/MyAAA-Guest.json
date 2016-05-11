@@ -11,13 +11,11 @@
                         "Menu": [
                             {
                                 "Text": "Why Join?",
-                                "Subtext": null,
                                 "Type": "NAV",
                                 "Link": "MyAAA/WhyJoin"
                             },
                             {
                                 "Text": "Compare membership levels",
-                                "Subtext": null,
                                 "Type": "NAV",
                                 "Link": "MyAAA/MembershipLevels"
                             }
@@ -33,19 +31,16 @@
                         "Menu": [
                             {
                                 "Text": "Insurance",
-                                "Subtext": null,
                                 "Type": "NAV",
                                 "Link": "MyAAA/Insurance"
                             },
                             {
                                 "Text": "Travel",
-                                "Subtext": null,
                                 "Type": "NAV",
                                 "Link": "MyAAA/Travel"
                             },
                             {
                                 "Text": "Banking",
-                                "Subtext": null,
                                 "Type": "NAV",
                                 "Link": "MyAAA/Banking"
                             }
@@ -60,15 +55,6 @@
         "Title": "Why Join?",
         "Groups": [
             {
-                "Text": null,
-                "Content": [
-                    {
-                        "Type": "HREF",
-                        "Href": "https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg"
-                    }
-                ]
-            },
-            {
                 "Text": "Exclusive member benefits",
                 "Content": [
                     {
@@ -76,113 +62,206 @@
                         "Menu": [
                             {
                                 "Text": "Roadside Assistance",
-                                "Subtext": null,
                                 "Type": "EXP",
                                 "Html": [
-                                    "<div class='standard_content'>",
-                                    "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                                    "   <h1>Any car. Anytime. Anywhere.</h1>",
-                                    "   <p>Car trouble? AAA's top-rated Roadside Assistance is here to get you back on your way.</p>",
-                                    "   <a href='...'>Learn more</a>",
-                                    "</div>"
+                                    "<html>",
+                                    "  <head>",
+                                    "    <title>Roadside Assistance</title>",
+                                    "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                                    "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                                    "  </head>",
+                                    "  <body>",
+                                    "    <div class='promo'>",
+                                    "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/RoadsideAssistance/WJ1.jpg' />",
+                                    "      <div>",
+                                    "        <h1>Any car. Anytime. Anywhere.</h1>",
+                                    "        <p>Car trouble? AAA’s top-rated Roadside Assistance is here to get you back on your way.</p>",
+                                    "        <nav>",
+                                    "          <a href='javascript: linkTo(\"MyAAA/WhyJoin/RoadsideAssistance\");'>Learn more&nbsp;&gt;</a>",
+                                    "        </nav>",
+                                    "      </div>",
+                                    "    </div>",
+                                    "  </body>",
+                                    "</html>"
                                 ]
                             },
                             {
                                 "Text": "AAA Savings",
-                                "Subtext": null,
                                 "Type": "EXP",
                                 "Html": [
-                                    "<div class='standard_content'>",
-                                    "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                                    "   <h1>Savings made simple</h1>",
-                                    "   <p>Save every day with exclusive discounts at your favorite stores, restaurants, entertainment or sporting events, and more than 100,000 partner locations worldwide.</p>",
-                                    "   <a href='...'>Learn more</a>",
-                                    "   <a href='...'>Start saving</a>",
-                                    "</div>"
+                                    "<html>",
+                                    "  <head>",
+                                    "    <title>Savings</title>",
+                                    "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                                    "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                                    "  </head>",
+                                    "  <body>",
+                                    "    <div class='promo'>",
+                                    "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/Savings/wj2.jpg' />",
+                                    "      <div>",
+                                    "        <h1>Savings made simple</h1>",
+                                    "        <p>Save every day with exclusive discounts at your favorite stores, restaurants, entertainment or sporting events, and more than 100,000 partner locations worldwide.</p>",
+                                    "        <nav>",
+                                    "          <a href='javascript: linkTo(\"MyAAA/WhyJoin/Savings\");'>Learn more&nbsp;&gt;</a>",
+                                    "          <a href='#'>Start saving&nbsp;&gt;</a>",
+                                    "        </nav>",
+                                    "      </div>",
+                                    "    </div>",
+                                    "  </body>",
+                                    "</html>"
                                 ]
                             },
                             {
                                 "Text": "AAA approved auto repair",
-                                "Subtext": null,
                                 "Type": "EXP",
                                 "Html": [
-                                    "<div class='standard_content'>",
-                                    "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                                    "   <h1>Tested. Inspected. Approved.</h1>",
-                                    "   <p>Picking the right mechanic can be difficult. AAA makes it easier by directing members to auto repair facilities that meet and maintain high professional standards.</p>",
-                                    "   <a href='...'>Learn more</a>",
-                                    "   <a href='...'>Search nearby</a>",
-                                    "</div>"
+                                    "<html>",
+                                    "  <head>",
+                                    "    <title>Approved Auto Repair</title>",
+                                    "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                                    "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                                    "  </head>",
+                                    "  <body>",
+                                    "    <div class='promo'>",
+                                    "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/AutoRepair/wj3.jpg' />",
+                                    "      <div>",
+                                    "        <h1>Tested. Inspected. Approved.</h1>",
+                                    "        <p>Picking the right mechanic can be difficult. AAA makes it easier by directing members to auto repair facilities that meet and maintain high professional standards.</p>",
+                                    "        <nav>",
+                                    "          <a href='javascript: linkTo(\"MyAAA/WhyJoin/ApprovedAutoRepair\");'>Learn more&nbsp;&gt;</a>",
+                                    "          <a href='#'>Search nearby&nbsp;&gt;</a>",
+                                    "        </nav>",
+                                    "      </div>",
+                                    "    </div>",
+                                    "  </body>",
+                                    "</html>"
                                 ]
                             },
                             {
                                 "Text": "AAA mobile battery service",
-                                "Subtext": null,
                                 "Type": "EXP",
                                 "Html": [
-                                    "<div class='standard_content'>",
-                                    "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                                    "   <h1>Dead battery? No problem.</h1>",
-                                    "   <p>Free testing for our current battery along with competitively priced replacements for most vehicles right on our trucks. Also delivered and installed free!</p>",
-                                    "   <a href='...'>Learn more</a>",
-                                    "   <a href='...'>Get a quote</a>",
-                                    "</div>"
+                                    "<html>",
+                                    "  <head>",
+                                    "    <title>Battery Service</title>",
+                                    "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                                    "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                                    "  </head>",
+                                    "  <body>",
+                                    "    <div class='promo'>",
+                                    "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/BatteryService/wj4.jpg' />",
+                                    "      <div>",
+                                    "        <h1>Dead battery? No problem.</h1>",
+                                    "        <p>Free testing for your current battery along with competitively priced replacements for most vehicles right on our trucks. Also delivered and installed free!</p>",
+                                    "        <nav>",
+                                    "          <a href='javascript: linkTo(\"MyAAA/WhyJoin/BatteryService\");'>Learn more&nbsp;&gt;</a>",
+                                    "          <a href='#'>Get a quote&nbsp;&gt;</a>",
+                                    "        </nav>",
+                                    "      </div>",
+                                    "    </div>",
+                                    "  </body>",
+                                    "</html>"
                                 ]
                             },
                             {
                                 "Text": "AAA auto buying service",
-                                "Subtext": null,
                                 "Type": "EXP",
                                 "Html": [
-                                    "<div class='standard_content'>",
-                                    "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                                    "   <h1>Great deals,\ngreat experience.</h1>",
-                                    "   <p>We've taken the hassle out of buying a car - new or used! With our certified dealer network, you'll know the target price of the car you want before you ever set foot on a dealer's lot.</p>",
-                                    "   <a href='...'>Read more</a>",
-                                    "   <a href='...'>Show now</a>",
-                                    "</div>"
+                                    "<html>",
+                                    "  <head>",
+                                    "    <title>Auto Buying Service</title>",
+                                    "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                                    "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                                    "  </head>",
+                                    "  <body>",
+                                    "    <div class='promo'>",
+                                    "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/AutoBuying/wj5.jpg' />",
+                                    "      <div>",
+                                    "        <h1>Great deals,<br />great experience.</h1>",
+                                    "        <p>We’ve taken the hassle out of buying a car – new or used! With our certified dealer network, you’ll know the target price of the car you want before you ever set foot on a dealer’s lot.</p>",
+                                    "        <nav>",
+                                    "          <a href='javascript: linkTo(\"MyAAA/WhyJoin/AutoBuyingService\");'>Learn more&nbsp;&gt;</a>",
+                                    "          <a href='#'>Shop now&nbsp;&gt;</a>",
+                                    "        </nav>",
+                                    "      </div>",
+                                    "    </div>",
+                                    "  </body>",
+                                    "</html>"
                                 ]
                             },
                             {
                                 "Text": "ID theft monitoring",
-                                "Subtext": null,
                                 "Type": "EXP",
                                 "Html": [
-                                    "<div class='standard_content'>",
-                                    "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                                    "   <h1>Get protection and peace of mind</h1>",
-                                    "   <p>AAA makes identity theft protection easier with ProtectMyID©. We'll monitor your credit, notify you of potential issues, offer fraud resolution assistance and more!</p>",
-                                    "   <a href='...'>Learn more</a>",
-                                    "   <a href='...'>Enroll now</a>",
-                                    "</div>"
+                                    "<html>",
+                                    "  <head>",
+                                    "    <title>ID Theft Monitoring</title>",
+                                    "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                                    "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                                    "  </head>",
+                                    "  <body>",
+                                    "    <div class='promo'>",
+                                    "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/IDTheftMonitoring/wj6.jpg' />",
+                                    "      <div>",
+                                    "        <h1>Get protection, and peace<br />of mind.</h1>",
+                                    "        <p>AAA makes identity theft protection easier with ProtectMyID<span class='sup'>&reg;</span>. We'll monitor your credit, notify you of potential issues, offer fraud resolution assistance and more!</p>",
+                                    "        <nav>",
+                                    "          <a href='javascript: linkTo(\"MyAAA/WhyJoin/IdTheftMonitoring\");'>Learn more&nbsp;&gt;</a>",
+                                    "        </nav>",
+                                    "      </div>",
+                                    "    </div>",
+                                    "  </body>",
+                                    "</html>"
                                 ]
                             },
                             {
                                 "Text": "Severe weather alerts",
-                                "Subtext": null,
                                 "Type": "EXP",
                                 "Html": [
-                                    "<div class='standard_content'>",
-                                    "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                                    "   <h1>Stay ahead of the storm</h1>",
-                                    "   <p>WeatherFX Alert utilizes state-of-the-art radar and modeling to keep you safe with early warnings via text or email for hail, lightning, flooding, high winds, and more.</p>",
-                                    "   <a href='...'>Learn more</a>",
-                                    "   <a href='...'>Sign up</a>",
-                                    "</div>"
+                                    "<html>",
+                                    "  <head>",
+                                    "    <title>Weather Alerts</title>",
+                                    "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                                    "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                                    "  </head>",
+                                    "  <body>",
+                                    "    <div class='promo'>",
+                                    "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/WeatherAlerts/wj7.jpg' />",
+                                    "      <div>",
+                                    "        <h1>Stay ahead of the storm</h1>",
+                                    "        <p>WeatherFX Alert utilizes state-of-the-art radar and modeling to keep you safe with early warnings via text or email for hail, lightning, flooding, high winds, and more.</p>",
+                                    "        <nav>",
+                                    "          <a href='javascript: linkTo(\"MyAAA/WhyJoin/WeatherAlerts\");'>Learn more&nbsp;&gt;</a>",
+                                    "        </nav>",
+                                    "      </div>",
+                                    "    </div>",
+                                    "  </body>",
+                                    "</html>"
                                 ]
                             },
                             {
                                 "Text": "AAADrive™",
-                                "Subtext": null,
                                 "Type": "EXP",
                                 "Html": [
-                                    "<div class='standard_content'>",
-                                    "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                                    "   <h1>Look under the hood of your driving</h1>",
-                                    "   <p>AAADrive™ is a powerful mobile tool that can help improve your driving. It monitors and scores your driving habits and gives feedback on how you can do better.</p>",
-                                    "   <a href='...'>Learn more</a>",
-                                    "   <a href='...'>Sign up</a>",
-                                    "</div>"
+                                    "<html>",
+                                    "  <head>",
+                                    "    <title>AAADrive</title>",
+                                    "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                                    "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                                    "  </head>",
+                                    "  <body>",
+                                    "    <div class='promo'>",
+                                    "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/AAADrive/wj8.jpg' />",
+                                    "      <div>",
+                                    "        <h1>Look under the hood of<br />your driving.</h1>",
+                                    "        <p>AAADrive&trade; is a powerful mobile tool that can help improve your driving. It monitors and scores your driving habits and gives feedback on how you can do better.</p>",
+                                    "        <nav>",
+                                    "          <a href='javascript: linkTo(\"MyAAA/WhyJoin/AaaDrive\");'>Learn more&nbsp;&gt;</a>",
+                                    "        </nav>",
+                                    "      </div>",
+                                    "    </div>",
+                                    "  </body>",
+                                    "</html>"
                                 ]
                             }
                         ]
@@ -201,11 +280,20 @@
                     {
                         "Type": "HTML",
                         "Html": [
-                            "<div class='...'>",
-                            "   <p>From changing flat tires roadside to jumping batteries in your driveway. AAA Roadside Assistance can help get you on your way. AAA is the nation's most comprehensive roadside service provider.</p>",
-                            "   <p>A simple phone call or online request is all it takes to bring help to your disabled vehicle. And as a member, you're covered in my car - whether you are the driver or passenger.</p>",
-                            "   <button>Join AAA now</button>",
-                            "</div>"
+                            "<html>",
+                            "  <head>",
+                            "    <title>Roadside Assistance</title>",
+                            "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                            "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                            "  </head>",
+                            "  <body>",
+                            "    <div class='primary-info'>",
+                            "      <p>From changing flat tires roadside to jumping batteries in your driveway, AAA Roadside Assistance can help get you on your way. AAA is the nation’s most comprehensive roadside service provider.</p>",
+                            "      <p>A simple phone call or online request is all it takes to bring help to your disabled vehicle. And as a member, you’re covered in any car – whether you are the driver or passenger.</p>",
+                            "      <nav><a class='primary' href='https://autoclubsouth.aaa.com/Partners/CCM.aspx?zip=<zip>&t=<temptoken>&nextPage=%2FJoin%2FJoinEntry.aspx'>Join AAA now&nbsp;&gt;</a></nav>",
+                            "    </div>",
+                            "  </body>",
+                            "</html>"
                         ]
                     }
                 ]
@@ -222,10 +310,19 @@
                     {
                         "Type": "HTML",
                         "Html": [
-                            "<div class='...'>",
-                            "   <p>Saving money has never been easier. As one of the world's largest member discount programs, every AAA membership comes with exclusive deals and discounts at partner merchants around the world. Just show your AAA discounts on food, retail, travel, entertainment and so much more.</p>",
-                            "   <button>Join AAA now</button>",
-                            "</div>"
+                            "<html>",
+                            "  <head>",
+                            "    <title>Savings</title>",
+                            "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                            "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                            "  </head>",
+                            "  <body>",
+                            "    <div class='primary-info'>",
+                            "      <p>Saving money has never been easier. As one of the world's largest member discount programs, every AAA membership comes with exclusive deals and discounts at partner merchants around the world. Just show your AAA membership card and enjoy instant AAA discounts on food, retail, travel, entertainment and so much more.</p>",
+                            "      <nav><a class='primary' href='https://autoclubsouth.aaa.com/Partners/CCM.aspx?zip=<zip>&t=<temptoken>&nextPage=%2FJoin%2FJoinEntry.aspx'>Join AAA now&nbsp;&gt;</a></nav>",
+                            "    </div>",
+                            "  </body>",
+                            "</html>"
                         ]
                     }
                 ]
@@ -242,11 +339,20 @@
                     {
                         "Type": "HTML",
                         "Html": [
-                            "<div class='...'>",
-                            "   <p>One of the most frequent consumer complaints in America is unsatisfactory automobile repairs. With AAA Approved Auto Repair, we take the guesswork out of finding a reliable repair shop.</p>",
-                            "   <p>Each facility is inspected, tested, and approved through a rigorous series of criteria including staff qualifications and training, business reputation, facility appearance, and more. So when it comes to auto repair, why chance it? Enjoy the savings and peace of mind that come from using a local AAA Approved Repair Facility.</p>",
-                            "   <button>Join AAA now</button>",
-                            "</div>"
+                            "<html>",
+                            "  <head>",
+                            "    <title>Approved Auto Repair</title>",
+                            "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                            "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                            "  </head>",
+                            "  <body>",
+                            "    <div class='primary-info'>",
+                            "      <p>One of the most frequent consumer complaints in America is unsatisfactory automobile repairs. With AAA Approved Auto Repair, we take the guesswork out of finding a reliable repair shop.</p>",
+                            "      <p>Each facility is inspected, tested, and approved through a rigorous series of criteria including staff qualifications and training, business reputation, facility appearance, and more. So when it comes to auto repair, why chance it? Enjoy the savings and peace of mind that come from using a local AAA Approved Repair Facility.</p>",
+                            "      <nav><a class='primary' href='https://autoclubsouth.aaa.com/Partners/CCM.aspx?zip=<zip>&t=<temptoken>&nextPage=%2FJoin%2FJoinEntry.aspx'>Join AAA now&nbsp;&gt;</a></nav>",
+                            "    </div>",
+                            "  </body>",
+                            "</html>"
                         ]
                     }
                 ]
@@ -254,7 +360,7 @@
         ]
     },
     {
-        "Id": "MyAAA/WhyJoin/MobileBatteryService",
+        "Id": "MyAAA/WhyJoin/BatteryService",
         "Title": "Mobile battery service",
         "Groups": [
             {
@@ -263,11 +369,20 @@
                     {
                         "Type": "HTML",
                         "Html": [
-                            "<div class='...'>",
-                            "   <p>Why waste time car battery shopping or waiting your turn in a repair shop? With the AAA Mobile Battery Service, we come to you!</p>",
-                            "   <p>We'll provide a free test of your current battery and electrical system, and if something's wrong, we can replace it with one of the competitively priced, genuine AAA branded batteries right on the truck! We will even install it free of charge, for most vehicles.</p>",
-                            "   <button>Join AAA now</button>",
-                            "</div>"
+                            "<html>",
+                            "  <head>",
+                            "    <title>Battery Service</title>",
+                            "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                            "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                            "  </head>",
+                            "  <body>",
+                            "    <div class='primary-info'>",
+                            "      <p>Why waste time car battery shopping or waiting your turn in a repair shop? With the AAA Mobile Battery Service, we come to you!</p>",
+                            "      <p>We’ll provide a free test of your current battery and electrical system, and if something’s wrong, we can replace it with one of the competitively priced, genuine AAA branded batteries right on the truck! We will even install it free of charge, for most vehicles.</p>",
+                            "      <nav><a class='primary' href='https://autoclubsouth.aaa.com/Partners/CCM.aspx?zip=<zip>&t=<temptoken>&nextPage=%2FJoin%2FJoinEntry.aspx'>Join AAA now&nbsp;&gt;</a></nav>",
+                            "    </div>",
+                            "  </body>",
+                            "</html>"
                         ]
                     }
                 ]
@@ -284,11 +399,20 @@
                     {
                         "Type": "HTML",
                         "Html": [
-                            "<div class='...'>",
-                            "   <p>With AAA Auto Buying, you can search through thousands of available cars, access unlimited TrueCar Price and Market Reports, compare features, see pictures, read reviews, and check your trade-in value - all from the convenience of your phone.</p>",
-                            "   <p>We prescreen each of our certified dealers to ensure that you can enjoy a better car-buying experience and a hassle-free deal. When you find a vehicle you like, the dealer will contact you to arrange a test drive. If you love it, you can buy it - without the worry or pressure.</p>",
-                            "   <button>Join AAA now</button>",
-                            "</div>"
+                            "<html>",
+                            "  <head>",
+                            "    <title>Auto Buying Service</title>",
+                            "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                            "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                            "  </head>",
+                            "  <body>",
+                            "    <div class='primary-info'>",
+                            "      <p>With AAA Auto Buying, you can search through thousands of available cars, access unlimited TrueCar Price and Market Reports, compare features, see pictures, read reviews, and check your trade-in value – all from the convenience of your phone.</p>",
+                            "      <p>We prescreen each of our certified dealers to ensure that you can enjoy a better car-buying experience and a hassle-free deal. When you find a vehicle you like, the dealer will contact you to arrange a test drive. If you love it, you can buy it – without the worry or pressure.</p>",
+                            "      <nav><a class='primary' href='https://autoclubsouth.aaa.com/Partners/CCM.aspx?zip=<zip>&t=<temptoken>&nextPage=%2FJoin%2FJoinEntry.aspx'>Join AAA now&nbsp;&gt;</a></nav>",
+                            "    </div>",
+                            "  </body>",
+                            "</html>"
                         ]
                     }
                 ]
@@ -296,7 +420,7 @@
         ]
     },
     {
-        "Id": "MyAAA/WhyJoin/IDTheftMonitoring",
+        "Id": "MyAAA/WhyJoin/IdTheftMonitoring",
         "Title": "ID theft monitoring",
         "Groups": [
             {
@@ -305,10 +429,19 @@
                     {
                         "Type": "HTML",
                         "Html": [
-                            "<div class='...'>",
-                            "   <p>Enjoy even greater peace of mind with another valuable member benefit from AAA: free identity theft monitoring. Sign up for free Essential coverage from ProtectMyID® and enjoy daily monitoring of your Experian credit report, as well as fraud resolution and card replacement support.</p>",
-                            "   <button>Join AAA now</button>",
-                            "</div>"
+                            "<html>",
+                            "  <head>",
+                            "    <title>ID Theft Monitoring</title>",
+                            "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                            "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                            "  </head>",
+                            "  <body>",
+                            "    <div class='primary-info'>",
+                            "      <p>Enjoy even greater peace of mind with another valuable member benefit from AAA: free identity theft monitoring. Sign up for free Essential coverage from ProtectMyID<span class='sup'>&reg;</span> and enjoy daily monitoring of your Experian credit report. You'll receive alerts of key changes on your report, as well as fraud resolution and card replacement support.</p>",
+                            "      <nav><a class='primary' href='https://autoclubsouth.aaa.com/Partners/CCM.aspx?zip=<zip>&t=<temptoken>&nextPage=%2FJoin%2FJoinEntry.aspx'>Join AAA now&nbsp;&gt;</a></nav>",
+                            "    </div>",
+                            "  </body>",
+                            "</html>"
                         ]
                     }
                 ]
@@ -316,7 +449,7 @@
         ]
     },
     {
-        "Id": "MyAAA/WhyJoin/SevereWeatherAlerts",
+        "Id": "MyAAA/WhyJoin/WeatherAlerts",
         "Title": "Severe weather alerts",
         "Groups": [
             {
@@ -325,11 +458,20 @@
                     {
                         "Type": "HTML",
                         "Html": [
-                            "<div class='...'>",
-                            "   <p>Whether you're at home or on the road, knowing what the weather will be like is crucial to protecting the people, pets, and the things you treasure most.</p>",
-                            "   <p>Powered by The Weather Company (parent company of The Weather Channel), WeatherFX Alert is the most advanced weather alert service available. Utilizing state of the art radar and modeling, its warnings are earlier than other alert systems, and provide specific alerts for hail, lightning, flooding, high winds, and more.</p>",
-                            "   <button>Join AAA now</button>",
-                            "</div>"
+                            "<html>",
+                            "  <head>",
+                            "    <title>Weather Alerts</title>",
+                            "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                            "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                            "  </head>",
+                            "  <body>",
+                            "    <div class='primary-info'>",
+                            "      <p>Whether you're at home or on the road, knowing what the weather will be like is crucial to protecting the people, pets, and the things you treasure most.</p>",
+                            "      <p>Powered by The Weather Company (parent company of The Weather Channel), WeatherFX Alert is the most advanced weather alert service available. Utilizing state of the art radar and modeling, its warnings are earlier than other alert systems, and provide specific alerts for hail, lightning, flooding, high winds, and more.</p>",
+                            "      <nav><a class='primary' href='https://autoclubsouth.aaa.com/Partners/CCM.aspx?zip=<zip>&t=<temptoken>&nextPage=%2FJoin%2FJoinEntry.aspx'>Join AAA now&nbsp;&gt;</a></nav>",
+                            "    </div>",
+                            "  </body>",
+                            "</html>"
                         ]
                     }
                 ]
@@ -337,7 +479,7 @@
         ]
     },
     {
-        "Id": "MyAAA/WhyJoin/AAADrive",
+        "Id": "MyAAA/WhyJoin/AaaDrive",
         "Title": "AAADrive™",
         "Groups": [
             {
@@ -346,300 +488,20 @@
                     {
                         "Type": "HTML",
                         "Html": [
-                            "<div class='...'>",
-                            "   <p>AAADrive™ helps you take smart driving to the next level. A powerful tool in the AAA Mobile app, AAADrive™ monitors your driving habits across five areas - Smoothness, Speed, Mobile Distraction, Time of Day, and Fatigue - and then gives you a score based on your performance. The better you drive, the higher the score.</p>",
-                            "   <p>And because you can't always be in the passenger seat when your loved ones get behind the wheel, AAADrive™ lets you set up driving parameters for speed, time of day, and geographic boundaries to help keep them safe on the road.</p>",
-                            "   <button>Join AAA now</button>",
-                            "</div>"
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "Id": "MyAAA/MembershipLevels",
-        "Title": "Membership levels",
-        "Groups": [
-            {
-                "Text": null,
-                "Content": [
-                    {
-                        "Type": "HTML",
-                        "Html": [
-                            "<div class='membership_level'>",
-                            "   <header>C L A S S I C ®</header>",
-                            "   <aside>",
-                            "       $66.00<br/>",
-                            "       <img src='Classic.jpg' />",
-                            "   </aside>",
-                            "   <ul>",
-                            "       <li><b>5</b> miles of towing</li>",
-                            "       <li>Fuel delivery</li>",
-                            "       <li><b>$600</b> in car travel interruption expenses</li>",
-                            "       <li><b>$50</b> in locksmith insurance</li>",
-                            "       <li><b>$100,000</b> travel insurance</li>",
-                            "   </ul>",
-                            "   <p>First additional member: <b>1 year free</b></p>",
-                            "   <p>Each additional member: <b>$15 per year</b></p>",
-                            "   <footer>",
-                            "       <button>Choose Classic</button>",
-                            "       <a href='...'>See full list of benefits</a>",
-                            "   </footer>",
-                            "</div>"
-                        ]
-                    }
-                ]
-            },
-            {
-                "Text": null,
-                "Content": [
-                    {
-                        "Type": "HTML",
-                        "Html": [
-                            "<div class='membership_level'>",
-                            "   <header>P L U S ®</header>",
-                            "   <aside>",
-                            "       $101.00<br/>",
-                            "       <img src='Plus.jpg' />",
-                            "   </aside>",
-                            "   <ul>",
-                            "       <li><b>100</b> miles of towing</li>",
-                            "       <li>Free fuel delivery</li>",
-                            "       <li><b>$1,000</b> in car travel interruption expenses</li>",
-                            "       <li><b>$100</b> in locksmith insurance</li>",
-                            "       <li><b>$300,000</b> travel insurance</li>",
-                            "       <li>Reduced airline fees</li>",
-                            "   </ul>",
-                            "   <p>First additional member: <b>$24 per year</b></p>",
-                            "   <p>Each additional member: <b>$39 per year</b></p>",
-                            "   <footer>",
-                            "       <button>Choose Plus</button>",
-                            "       <a href='...'>See full list of benefits</a>",
-                            "       <p>AAA Plus® roadside assistance benefits available three<br/>days after payment has been processed.</p>",
-                            "   </footer>",
-                            "</div>"
-                        ]
-                    }
-                ]
-            },
-            {
-                "Text": null,
-                "Content": [
-                    {
-                        "Type": "HTML",
-                        "Html": [
-                            "<div class='membership_level_summary'>",
-                            "   <header>P R E M I E R ®</header>",
-                            "   <aside>",
-                            "       $127.00<br/>",
-                            "       <img src='Premier.jpg' />",
-                            "   </aside>",
-                            "   <ul>",
-                            "       <li><b>200</b> miles of towing</li>",
-                            "       <li>Free fuel delivery</li>",
-                            "       <li><b>$1,500</b> in car travel interruption expenses</li>",
-                            "       <li><b>$150</b> in locksmith insurance</li>",
-                            "       <li><b>$500,000</b> travel insurance</li>",
-                            "       <li>No airline fees</li>",
-                            "       <li>Premium travel and assistance benefits</li>",
-                            "   </ul>",
-                            "   <p>First additional member: <b>$35 per year</b></p>",
-                            "   <p>Each additional member: <b>$50 per year</b></p>",
-                            "   <footer>",
-                            "       <button>Choose Premier</button>",
-                            "       <a href='...'>See full list of benefits</a>",
-                            "       <p>AAA Premier® roadside assistance benefits available three<br/>days after payment has been processed.</p>",
-                            "   </footer>",
-                            "</div>"
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "Id": "MyAAA/MembershipLevels/Classic",
-        "Title": "Classic membership",
-        "Groups": [
-            {
-                "Text": null,
-                "Content": [
-                    {
-                        "Type": "HTML",
-                        "Html": [
-                            "<div class='membership_level_details'>",
-                            "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                            "   <h1>Benefits of AAA<br/>Classic Membership</h1>",
-                            "   <aside>",
-                            "       $66.00<br/>",
-                            "       <button>Join AAA</button>",
-                            "   </aside>",
-                            "   <p>Classic membership gives you access to the #1-rated roadside assistance service in the nation, incredible savings with the largest member discount program in the world, and more.</p>",
-                            "   <p>First additional member: <b>1 year free</b></p>",
-                            "   <p>Each additional member: <b>$15 for the first year</b></p>",
-                            "   <hr/>",
-                            "   <h2>Auto Rescue</h2>",
-                            "   <ul>",
-                            "       <li>Up to four 5-mile tows</li>",
-                            "       <li>Emergency starting</li>",
-                            "       <li>Free mobile battery service</li>",
-                            "       <li>Flat tire service</li>",
-                            "       <li>Fuel service delivery - you pay fuel</li>",
-                            "       <li>Vehicle locksmith, up to $50 for lockout only</li>",
-                            "       <li>Extrication/winching</li>",
-                            "   </ul>",
-                            "   <h2>Travel</h2>",
-                            "   <ul>",
-                            "       <li>Free access to AAA TripTik travel planner and AAA TourBook guides</li>",
-                            "       <li>AAA approved lodging and hotel ratings</li>",
-                            "       <li>Nominal fee for Passport photos</li>",
-                            "       <li>Car travel interruption up to $600</li>",
-                            "       <li>Free travel accident insurance for AAA travel up to $100,000</li>",
-                            "       <li>Free Hertz gold plus rewards membership + 675 Hertz rewards points after first gold rental</li>",
-                            "   </ul>",
-                            "   <h2>Bonus Benefits</h2>",
-                            "   <ul>",
-                            "       <li>Free emergency check cashing</li>",
-                            "       <li>Everyday savings at more than 100,000 partner locations worldwide</li>",
-                            "       <li>Free insurance policy review and quotes</li>",
-                            "       <li>Legal service fee reimbursement:<br/>",
-                            "           Manslaughter - $500<br/>",
-                            "           Reckless driving - $250<br/>",
-                            "           Minor traffic violations - $100",
-                            "       </li>",
-                            "   </ul>",
-                            "   <footer>",
-                            "       <button>Join AAA now</button>",
-                            "   </footer>",
-                            "</div>"
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "Id": "MyAAA/MembershipLevels/Plus",
-        "Title": "Plus membership",
-        "Groups": [
-            {
-                "Text": null,
-                "Content": [
-                    {
-                        "Type": "HTML",
-                        "Html": [
-                            "<div class='membership_level_details'>",
-                            "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                            "   <h1>Benefits of AAA<br/>Plus Membership</h1>",
-                            "   <aside>",
-                            "       $101.00<br/>",
-                            "       <button>Join AAA</button>",
-                            "   </aside>",
-                            "   <p>Plus membership gives you all the benefits available in Classic, plus the added protection and savings that matter most when you're traveling on the road and caring for your car.</p>",
-                            "   <p>First additional member: <b>$24 per year</b></p>",
-                            "   <p>Each additional member: <b>$39 for the first year</b></p>",
-                            "   <hr/>",
-                            "   <h2>Auto Rescue</h2>",
-                            "   <ul>",
-                            "       <li>Up to four 5-mile tows (except Nebraska which is four 10-mile tows)</li>",
-                            "       <li>Emergency starting</li>",
-                            "       <li>Free mobile battery service</li>",
-                            "       <li>Flat tire service</li>",
-                            "       <li>Fuel service delivery</li>",
-                            "       <li>Vehicle locksmith up to $100</li>",
-                            "       <li>Extrication/winching</li>",
-                            "   </ul>",
-                            "   <h2>Travel</h2>",
-                            "   <ul>",
-                            "       <li>Free access to AAA TripTik travel planner and AAA TourBook guides</li>",
-                            "       <li>AAA approved lodging and hotel ratings</li>",
-                            "       <li>Two free sets of Passport photos per member per year</li>",
-                            "       <li>Car travel interruption up to $1,000</li>",
-                            "       <li>Free travel accident insurance for AAA travel up to $300,000</li>",
-                            "       <li>Free Hertz gold plus rewards membership + 675 Hertz rewards points after first gold rental</li>",
-                            "   </ul>",
-                            "   <h2>Bonus Benefits</h2>",
-                            "   <ul>",
-                            "       <li>Free emergency check cashing</li>",
-                            "       <li>Everyday savings at more than 100,000 partner locations worldwide</li>",
-                            "       <li>Free insurance policy review and quotes</li>",
-                            "       <li>Legal service fee reimbursement:<br/>",
-                            "           Manslaughter - $1,500<br/>",
-                            "           Reckless driving - $500<br/>",
-                            "           Minor traffic violations - $200",
-                            "       </li>",
-                            "   </ul>",
-                            "   <footer>",
-                            "       <button>Join AAA now</button>",
-                            "   </footer>",
-                            "</div>"
-                        ]
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "Id": "MyAAA/MembershipLevels/Premier",
-        "Title": "Premier membership",
-        "Groups": [
-            {
-                "Text": null,
-                "Content": [
-                    {
-                        "Type": "HTML",
-                        "Html": [
-                            "<div class='membership_level_details'>",
-                            "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                            "   <h1>Benefits of AAA<br/>Premier Membership</h1>",
-                            "   <aside>",
-                            "       $127.00<br/>",
-                            "       <button>Join AAA</button>",
-                            "   </aside>",
-                            "   <p>Premier Membership entitles you to the highest level of AAA benefits and services available. Personal assistance and travel luxuries give you the most exclusive ways yo save time and money on and off the road.</p>",
-                            "   <p>First additional member: <b>$35 per year</b></p>",
-                            "   <p>Each additional member: <b>$50 for the first year</b></p>",
-                            "   <hr/>",
-                            "   <h2>Auto Rescue</h2>",
-                            "   <ul>",
-                            "       <li>One 200-mile tow</li>",
-                            "       <li>Up to three 100-mile tows</li>",
-                            "       <li>Emergency starting</li>",
-                            "       <li>Free mobile battery service</li>",
-                            "       <li>Flat tire service</li>",
-                            "       <li>Fuel service delivery</li>",
-                            "       <li>Complimentary one-day car rental with qualifying tow</li>",
-                            "       <li>Vehicle locksmith up to $150</li>",
-                            "       <li>Extrication/winching</li>",
-                            "   </ul>",
-                            "   <h2>Travel</h2>",
-                            "   <ul>",
-                            "       <li>Free access to AAA TripTik travel planner and AAA TourBook guides</li>",
-                            "       <li>AAA approved lodging and hotel ratings</li>",
-                            "       <li>Waived airline fees</li>",
-                            "       <li>Free unlimited sets of Passport photos per member per year</li>",
-                            "       <li>Car travel interruption up to $1,500</li>",
-                            "       <li>Free travel accident insurance for AAA travel up to $500,000</li>",
-                            "       <li>Free Hertz gold plus rewards membership + 1,100 Hertz rewards points after first gold rental</li>",
-                            "   </ul>",
-                            "   <h2>Bonus Benefits</h2>",
-                            "   <ul>",
-                            "       <li>Free emergency check cashing</li>",
-                            "       <li>24-hour concierge service</li>",
-                            "       <li>24-hour emergency medical services</li>",
-                            "       <li>Everyday savings at more than 160,000 partner locations worldwide</li>",
-                            "       <li>Free insurance policy review and quotes</li>",
-                            "       <li>Legal service fee reimbursement:<br/>",
-                            "           Manslaughter - $1,500<br/>",
-                            "           Reckless driving - $500<br/>",
-                            "           Minor traffic violations - $200",
-                            "       </li>",
-                            "   </ul>",
-                            "   <footer>",
-                            "       <button>Join AAA now</button>",
-                            "   </footer>",
-                            "</div>"
+                            "<html>",
+                            "  <head>",
+                            "    <title>AAADrive</title>",
+                            "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                            "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                            "  </head>",
+                            "  <body>",
+                            "    <div class='primary-info'>",
+                            "      <p>AAADrive&trade; helps you take smart driving to the next level. A powerful tool in the AAA Mobile app, AAADrive&trade; monitors your driving habits across five areas – Smoothness, Speed, Mobile Distraction, Time of Day, and Fatigue – and then gives you a score based on your performance. The better you drive, the higher your score.</p>",
+                            "      <p>And because you can’t always be in the passenger seat when your loved ones get behind the wheel, AAADrive&trade; lets you set up driving parameters for speed, time of day, and geographic boundaries to help keep them safe on the road.</p>",
+                            "      <nav><a class='primary' href='https://autoclubsouth.aaa.com/Partners/CCM.aspx?zip=<zip>&t=<temptoken>&nextPage=%2FJoin%2FJoinEntry.aspx'>Join AAA now&nbsp;&gt;</a></nav>",
+                            "    </div>",
+                            "  </body>",
+                            "</html>"
                         ]
                     }
                 ]
@@ -656,58 +518,212 @@
                     {
                         "Type": "HTML",
                         "Html": [
-                            "<div class='...'>",
-                            "   <p>If you are already a AAA policy holder,<br/>please log in to see and manage your account</p>",
-                            "   <button>Log in to insurance</button>",
-                            "</div>"
+                            "<html>",
+                            "  <head>",
+                            "    <title>Insurance</title>",
+                            "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                            "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                            "  </head>",
+                            "  <body>",
+                            "    <header class='primary-info'>",
+                            "      <p style='text-align: center;'>If you are already a AAA policy holder, please log in to see and manage your account</p>",
+                            "      <nav><a class='primary' href='#'>Log in to insurance&nbsp;&gt;</a></nav>",
+                            "    </header>",
+                            "    <div class='promo'>",
+                            "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/Insurance/Auto/I1.jpg' />",
+                            "      <div style='background: #FFFFFF;'>",
+                            "        <h3>Auto coverage</h3>",
+                            "        <p>It’s not just a residence; it's your home – and it's one of your biggest investments! Get protection and peace of mind with home or renters insurance through AAA.</p>",
+                            "        <nav style='width: 100%;'>",
+                            "          <a href='#' style='text-align: left;'>Get a quote&nbsp;&gt;</a>",
+                            "          <a href='#' style='text-align: center;'>Find an agent&nbsp;&gt;</a>",
+                            "          <a href='#' style='text-align: right;'>Call us&nbsp;&gt;</a>",
+                            "        </nav>",
+                            "      </div>",
+                            "    </div>",
+                            "    <div class='promo'>",
+                            "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/Insurance/Home/I2.jpg' />",
+                            "      <div style='background: #FFFFFF;'>",
+                            "        <h3>Home coverage</h3>",
+                            "        <p>It’s not just a residence; it's your home – and it's one of your biggest investments! Get protection and peace of mind with home or renters insurance through AAA.</p>",
+                            "        <nav style='width: 100%;'>",
+                            "          <a href='#' style='text-align: left;'>Get a quote&nbsp;&gt;</a>",
+                            "          <a href='#' style='text-align: center;'>Find an agent&nbsp;&gt;</a>",
+                            "          <a href='#' style='text-align: right;'>Call us&nbsp;&gt;</a>",
+                            "        </nav>",
+                            "      </div>",
+                            "    </div>",
+                            "    <div class='promo'>",
+                            "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/Insurance/Life/I3.jpg' />",
+                            "      <div style='background: #FFFFFF;'>",
+                            "        <h3>Lilfe coverage</h3>",
+                            "        <p>It’s not just a residence; it's your home – and it's one of your biggest investments! Get protection and peace of mind with home or renters insurance through AAA.</p>",
+                            "        <nav style='width: 100%;'>",
+                            "          <a href='#' style='text-align: left;'>Get a quote&nbsp;&gt;</a>",
+                            "          <a href='#' style='text-align: center;'>Find an agent&nbsp;&gt;</a>",
+                            "          <a href='#' style='text-align: right;'>Call us&nbsp;&gt;</a>",
+                            "        </nav>",
+                            "      </div>",
+                            "    </div>",
+                            "    <footer>",
+                            "      <p>Life insurance underwritten by AAA Life Insurance Company, Livonia, MI. AAA Life (CA Certificate of Authority #07861) is licensed in all states except NY. Products and their features may not be available in all states. ALMI-23333-216-XX</p>",
+                            "    </footer>",
+                            "  </body>",
+                            "</html>"
                         ]
-                    },
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Id": "MyAAA/Travel",
+        "Title": "Travel",
+        "Groups": [
+            {
+                "Text": null,
+                "Content": [
                     {
                         "Type": "HTML",
                         "Html": [
-                            "<div class='standard_content'>",
-                            "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                            "   <h1>Auto coverage</h1>",
-                            "   <p>Getting the right auto insurance is an important decision. That's why you can always expect more with insurance through AAA. You can always count on our agents to evaluate your specific needs and find you the right coverage at the right price.</p>",
-                            "   <a href='...'>Get a quote</a>",
-                            "   <a href='...'>Find an agent</a>",
-                            "   <a href='...'>Call us</a>",
-                            "</div>"
+                            "<html>",
+                            "  <head>",
+                            "    <title>Travel</title>",
+                            "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                            "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                            "  </head>",
+                            "  <body>",
+                            "    <div class='promo'>",
+                            "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/Travel/T1.jpg' />",
+                            "      <div>",
+                            "        <h3>Travel the world with AAA</h3>",
+                            "        <p>AAA Travel is your one-stop resource for airline tickets, hotels, cruises, car rentals, and so much more. Do more and worry less on your next vacation when you plan and book with AAA Travel.</p>",
+                            "      </div>",
+                            "    </div>",
+                            "  </body>",
+                            "</html>"
                         ]
-                    },
+                    }
+                ]
+            },
+            {
+                "Text": "Book a trip",
+                "Content": [
+                    {
+                        "Type": "MENU",
+                        "Menu": [
+                            {
+                                "Text": "Book a hotel",
+                                "Type": "NAV",
+                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                            },
+                            {
+                                "Text": "Rent a car",
+                                "Type": "NAV",
+                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                            },
+                            {
+                                "Text": "Book a flight",
+                                "Type": "NAV",
+                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Text": "Plan a trip",
+                "Content": [
+                    {
+                        "Type": "MENU",
+                        "Menu": [
+                            {
+                                "Text": "Find a travel agent",
+                                "Type": "NAV",
+                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                            },
+                            {
+                                "Text": "Travel deals",
+                                "Type": "NAV",
+                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                            },
+                            {
+                                "Text": "Travel ideas",
+                                "Type": "NAV",
+                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                            },
+                            {
+                                "Text": "AAA Drive Trips",
+                                "Type": "NAV",
+                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                            },
+                            {
+                                "Text": "AAA travel planner",
+                                "Type": "NAV",
+                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                            },
+                            {
+                                "Text": "AAA travel guides",
+                                "Type": "NAV",
+                                "Link": "http://autoclubsouth.aaa.com/Mobile/Gift.aspx"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Id": "MyAAA/Banking",
+        "Title": "Banking",
+        "Groups": [
+            {
+                "Text": null,
+                "Content": [
                     {
                         "Type": "HTML",
                         "Html": [
-                            "<div class='standard_content'>",
-                            "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                            "   <h1>Home coverage</h1>",
-                            "   <p>It's not just a residence, it's your home; and it's one of the biggest investments! Get protection and peace of mind with home or renters insurance through AAA.</p>",
-                            "   <a href='...'>Get a quote</a>",
-                            "   <a href='...'>Find an agent</a>",
-                            "   <a href='...'>Call us</a>",
-                            "</div>"
-                        ]
-                    },
-                    {
-                        "Type": "HTML",
-                        "Html": [
-                            "<div class='standard_content'>",
-                            "   <img src='https://www.farmersagent.com/Assets/Agents/grising/Images/17c30e59df074421bae9d877ef0e0776_AdPanel.jpg' />",
-                            "   <h1>Life coverage</h1>",
-                            "   <p>Help protect those you care about and prepare for a more comfortable future with life insurance from AAA Life. Our agents will help you find the right coverage for every stage of life.</p>",
-                            "   <a href='...'>Get a quote</a>",
-                            "   <a href='...'>Find an agent</a>",
-                            "   <a href='...'>Call us</a>",
-                            "</div>"
-                        ]
-                    },
-                    {
-                        "Type": "HTML",
-                        "Html": [
-                            "<div class='...'>",
-                            "   <p>If you are already a AAA policy holder,<br/>please log in to see and manage your account</p>",
-                            "   <button>Log in to insurance</button>",
-                            "</div>"
+                            "<html>",
+                            "  <head>",
+                            "    <title>Banking</title>",
+                            "    <meta name='viewport' content='width=device-width, initial-scale=1' />",
+                            "    <link rel='stylesheet' type='text/css' href='https://qmobileapi.autoclubgroup.com/Versions/V2/Content/Html/MyAAA.css' />",
+                            "  </head>",
+                            "  <body>",
+                            "    <header class='primary-info'>",
+                            "      <p style='text-align: center;'>If you are already a AAA banking customer, please log in to see and manage your account</p>",
+                            "      <nav><a class='primary' href='#'>Log in to banking&nbsp;&gt;</a></nav>",
+                            "    </header>",
+                            "    <div class='promo'>",
+                            "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/Banking/Banking%20Through%20AAA/B1.jpg' />",
+                            "      <div style='background: #FFFFFF;'>",
+                            "        <h3>Banking through AAA</h3>",
+                            "        <p>AAA Banking offers high-yield or free checking and savings accounts, as well as CDs and IRAs; all with the convenience of online and mobile banking.</p>",
+                            "        <nav><a href='#'>Open an account&nbsp;&gt;</a></nav>",
+                            "      </div>",
+                            "    </div>",
+                            "    <div class='promo'>",
+                            "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/Banking/Auto%20Loans/B2.jpg' />",
+                            "      <div style='background: #FFFFFF;'>",
+                            "        <h3>Auto loans</h3>",
+                            "        <p>Get direct access to helpful and knowledgeable lending professionals who will help you find the right financing options to fit your needs.</p>",
+                            "        <nav><a href='#'>Apply for an auto loan&nbsp;&gt;</a></nav>",
+                            "      </div>",
+                            "    </div>",
+                            "    <div class='promo'>",
+                            "      <!--img src='https://autoclubsouth.aaa.com/assets/images/ccm/Banking/Credit%Cards/B1.jpg' /-->",
+                            "      <img src='https://autoclubsouth.aaa.com/assets/images/ccm/Banking/Banking%20Through%20AAA/B1.jpg' />",
+                            "      <div style='background: #FFFFFF;'>",
+                            "        <h3>Credit cards</h3>",
+                            "        <p>With AAA Dollars<span class='sup'>&reg;</span> and AAA Dollars<span class='sup'>&reg;</span> Plus MasterCard<span class='sup'>&reg;</span>, every qualifying purchase earns valuable AAA Dollars!</p>",
+                            "        <nav><a href='#'>Apply for a credit card &gt;</a></nav>",
+                            "      </div>",
+                            "    </div>",
+                            "    <footer>",
+                            "      <p>Products are offerred by Auto Club Trust, FSB. Member FDIC and Equal Credit Opportunity Lender.</p>",
+                            "    </footer>",
+                            "  </body>",
+                            "</html>"
                         ]
                     }
                 ]
